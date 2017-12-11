@@ -1,0 +1,161 @@
+#title {
+	z-index: 2;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#view {
+	width: 950px;
+	height: 600px;
+
+	overflow: hidden;
+
+	background-color: #101010;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#game {
+	z-index: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#chat {
+	width: 400px;
+	height: 180px;
+
+	z-index: 20;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	overflow: hidden;
+}
+
+#chat > #message_entry {
+	width: 100%;
+	height: 24px;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+#chat > #messages {
+	height: calc(180px - 24px);
+	width: 100%;
+
+	background-color: rgba(255, 255, 255, 0.6);
+
+	position: absolute;
+	left: 0;
+	bottom: 24px;
+
+	overflow-y: auto;
+}
+
+#chat > #messages > .message {
+	margin: 4px;
+}
+
+#chat > #messages > .message.mine {
+	color: red;
+}
+
+#game > .player {
+	position: absolute;
+}
+
+#game > .monster {
+	position: absolute;
+}
+
+#game > .item {
+	position: absolute;
+}
+
+#game .icon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-repeat: round;
+}
+
+#game .name {
+	width: 300%;
+	text-align: center;
+
+	position: absolute;
+	bottom: -20px;
+
+	z-index: 10;
+}
+
+#game > .player.up > .icon {
+	background-image: url("assets/player-up.png");
+}
+
+#game > .player.down > .icon {
+	background-image: url("assets/player-down.png");
+}
+
+#game > .player.left > .icon {
+	background-image: url("assets/player-left.png");
+}
+
+#game > .player.right > .icon {
+	background-image: url("assets/player-right.png");
+}
+
+#game > .monster.Skeleton.down > .icon {
+	background-image: url("assets/skeleton-down.png");
+}
+
+#game > .monster.Skeleton.up > .icon {
+	background-image: url("assets/skeleton-up.png");
+}
+
+#game > .monster.Skeleton.right > .icon {
+	background-image: url("assets/skeleton-right.png");
+}
+
+#game > .monster.Skeleton.left > .icon {
+	background-image: url("assets/skeleton-left.png");
+}
+
+#game > .item.potion > .icon {
+	background-image: url("assets/potion.png");
+}
+
+#game > .floor {
+	background-image: url("assets/floor.png");
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-repeat: round;
+
+	z-index: -2;
+}
+
+#game > .wall {
+	background-image: url("assets/wall.png");
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-repeat: round;
+
+	z-index: 1;
+}

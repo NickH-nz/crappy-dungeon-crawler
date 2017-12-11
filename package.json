@@ -1,0 +1,19 @@
+{
+  "name": "cdc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "node server/main.js",
+    "preclient": "browserify client/src/main.js -o client/wwwroot/bundle.js",
+    "client": "cd client/wwwroot && http-server -p 2222 --cors"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "cookies-js": "^1.2.2",
+    "express": "^4.13.4",
+    "http-server": "^0.9.0",
+    "socket.io": "^1.4.6"
+  }
+}
